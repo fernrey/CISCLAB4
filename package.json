@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/fernrey/CISCLAB4#readme",
   "dependencies": {
+    "csvtojson": "^2.0.10",
     "md5": "^2.3.0"
   }
 }
