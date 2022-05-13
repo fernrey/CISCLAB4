@@ -10,7 +10,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
         throw err
     } else {
         console.log('Connected to SQLite database.')
-        db.run(`CREATE TABLE cars (
+        db.run(`CREATE TABLE IF NOT EXISTS cars (
             Car_ID INT PRIMARY KEY,
             Judge_ID INT,
             Judge_Name TEXT,
